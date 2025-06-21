@@ -1,6 +1,9 @@
-cmake_minimum_required(VERSION 3.31)
-project(round_1033 C)
+# Add problem A if it exists
+if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/A_square_of_rectangles")
+    add_subdirectory(A_square_of_rectangles)
+endif()
 
-set(CMAKE_C_STANDARD 11)
-
-add_executable(round_1033 main.c)
+# Add problem B if it exists
+if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/B_square_pool")
+    add_subdirectory(B_square_pool)
+endif()
