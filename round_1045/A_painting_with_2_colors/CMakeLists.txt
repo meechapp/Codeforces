@@ -1,0 +1,1 @@
+add_executable(round_1045_A main.c)
